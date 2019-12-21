@@ -38,9 +38,10 @@
 
         <ImageView
             android:id="@+id/imgProfile"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
+            android:layout_width="@dimen/dimenImgProfile"
+            android:layout_height="@dimen/dimenImgProfile"
             android:layout_below="@id/txtTitle"
+            android:layout_alignParentBottom="true"
             android:layout_marginStart="@dimen/inner_components_spacing"
             android:layout_marginLeft="@dimen/inner_components_spacing"
             android:layout_marginTop="@dimen/inner_components_spacing"
@@ -49,9 +50,8 @@
             android:layout_toStartOf="@id/imgArrow"
             android:layout_toLeftOf="@id/imgArrow"
             android:background="@android:color/transparent"
-            android:contentDescription="@string/profile_image"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/other" />
+            android:contentDescription="@string/image"
+            android:scaleType="fitXY" />
 
         <TextView
             android:id="@+id/txtDescription"

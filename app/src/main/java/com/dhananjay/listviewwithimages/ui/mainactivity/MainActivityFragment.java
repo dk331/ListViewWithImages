@@ -62,7 +62,7 @@ public class MainActivityFragment extends Fragment {
         ButterKnife.bind(this, fragmentView);
 
         progressDialog = new ProgressDialog(getActivity());
-        progressDialog.setMessage("Processing...\nPlease wait...");
+        progressDialog.setMessage(getResources().getString(R.string.processing));
 
         rowList = new ArrayList<>();
         rowListAdapter = new RowListAdapter(getActivity(), rowList);
